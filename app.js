@@ -1,7 +1,7 @@
 var menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
 function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
+  var id = element.getAttribute('href');
   return document.querySelector(id).offsetTop;
 }
 
