@@ -19,13 +19,7 @@ menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
 });
 
-//suporte a browsers antigos / que não suportam scroll smooth nativo
-/**
- * Smooth scroll animation
- * @param {int} endX: destination x coordinate
- * @param {int) endY: destination y coordinate
- * @param {int} duration: animation duration in ms
- */
+
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
